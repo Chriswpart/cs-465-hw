@@ -7,26 +7,27 @@
     <title>1-form</title>
 </head>
 <body>
-    <fieldset>
-        <legend><strong>Contact Form</strong></legend>
-        <label>Name:<input type="text" name="name" /></label><br />
-        <label>Email:<input type="text" name="email" /></label><br />
-        <p>
-        <label><input type="radio" name="grad" value="undergraduate"
-        checked="checked" /> Undergraduate</label><br />
-        <label></label><input type="radio" name="grad" value="graduate"
-        checked="checked" /> Graduate</label><br />
-        <label></label><input type="radio" name="grad" value="other"
-        checked="checked" /> Other</label><br />
-        </p>
-        <p>
-        <label for="comment">Comment</label><br />
-        <textarea cols="25" rows="8" id="comment"></textarea>
-        </p>
-        <input type="submit" name="submit"
-        value="Submit" />
-        <input type="reset" name="reset"
-        value="Reset" />
-    </fieldset>
+    <form action>
+        <fieldset>
+            <legend><strong>Contact Form</strong></legend>
+            <label>Name: <input type="text" name="name" /></label><br />
+            <label for="email">Email: <input type="email" id="email" name="email" /></label><br />
+            <p>
+            <label><input type="radio" name="grad" value="undergraduate"
+            checked="checked" /> Undergraduate</label><br />
+            <label></label><input type="radio" name="grad" value="graduate"
+            checked="checked" /> Graduate</label><br />
+            <label></label><input type="radio" name="grad" value="other"
+            checked="checked" /> Other</label><br />
+            </p>
+            <p>
+            <label for="comment">Comment</label><br />
+            <textarea cols="25" rows="8" id="comment"></textarea>
+            </p>
+            <input type="submit" name="submit" value="Submit">
+            <input type="reset" name="reset" value="Reset">
+            <br />
+        </fieldset>
+    </form>
 </body>
 </html>
