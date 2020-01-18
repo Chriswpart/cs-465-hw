@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, orange, orange 60%, cyan);
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 span {
+    text-transform: uppercase;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-top: 40px;
+    border-bottom: 3px solid teal;
+
+}
+
+fieldset {
+    width: 500px;
+    height: 725px;
+    margin: 0 auto;
+    margin-top: 40px;
+    border: none;
+    position: relative;
+    background-color: white;
+}
+
+input, .comment {
+    border: 1px solid lightgrey;
+    border-radius: 2px;
+}
+
+.radio {
+    opacity: 0;
+    position: absolute;
+}
+
+.radio + .radio-label:before {
+    content: '';
+    background: white;
+    border: 2px solid lightgrey;
+    display: inline-block;
+    vertical-align: middle;
+    width: 10px;
+    height: 10px;
+    padding: 1px;
+    margin-right: 10px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+.radio + .radio-label:before {
+    border-radius: 50%;
+}
+
+.radio:checked + .radio-label:before {
+    background: white;
+    box-shadow: inset 0px 0px 0px 4px teal;
+}
+
+#box1 {
+    margin: 0 auto;
+    margin-bottom: 40px;
+    margin-top: 50px;
+
+}
+
+.input {
+    width: 350px;
+    height: 30px;
+    float: right;
+    margin-right: 20px;
+}
+
+.input-label {
+    margin: 0 auto;
+    margin-left: 10px;
+}
+
+.button {
+    color: white;
+    background-color: teal;
+    width: 100px;
+    height: 30px;
+}
+
+#box4 {
+    margin: 0 auto;
+    margin-left: 10px;
+    position: absolute;
+    bottom: 40px;
+}
+
+.comment {
+    width: 470px;
+    height: 200px;
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-right: 20px;
+    margin-top: 8px;
+}
+
+#box3 label {
+    margin: 0 auto;
+    margin-left: 10px;
+    margin-top: 30px;
+}
+
+#box3 {
+    position: relative;
+    top: 40px;
+}
+
+
+
+
