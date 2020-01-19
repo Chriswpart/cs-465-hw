@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    height: 100%;
+    min-height: 100vh;
+    background: linear-gradient(grey, lightgrey, white, lightgrey, grey);
+}
+
+.top {
+    width: 70%;
+    height: 500px;
+    border: 2px solid black;
+    background: url(https://live.staticflickr.com/8740/17175693750_93f6858b97_b.jpg) no-repeat center;
+    background-size: auto auto;
+    margin: 0 auto;
+    position: relative;
+}
+
+#title {
+    text-align: center;
+    position: relative;
+    top: 20%;
+    color: white;
+    font-size: 40px;
+}
+
+.menu {
+    width: 120x;
+    height: 30px;
+    margin: 0 auto;
+    padding-left: 5px;
+    padding-top: 5px;
+    position: absolute;
+    bottom: 0;
+}
+
+.menu-button {
+    color: red;
+}
+
+#about {
+    height: 750px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#image2 {
+    position: relative;
+    float: left;
+}
+
+#about p {
+    position: relative;
+    float: left;
+    margin: 0 auto;
+    margin-left: 20px;
+}
+
+#photos {
+    height: 750px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+#photos #image1 {
+    margin-left: 50px;
+}
+
+#link {
+    height: 500px;
+    width: 100%;
+}
+
+li {
+    margin: 0 auto;
+    margin-top: 20px;
+}
