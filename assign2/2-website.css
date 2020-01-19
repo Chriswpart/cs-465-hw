@@ -1,0 +1,49 @@
+body {
+    font-family: sans-serif;
+}
+
+p { 
+    font-size: 12px;
+}
+
+.cage {
+    width: 1000px;
+    margin: 0 auto;
+    padding-left: 50px;
+    overflow: auto;
+    display: grid;
+    grid-template-columns: 200px 200px;
+    grid-gap: 4px;
+    grid-template-areas: 
+    "a a b b"
+    "c c c d";
+}
+
+.block1 {
+    grid-area: a;
+}
+
+.block2 {
+    grid-area: b;
+    position: relative;
+    margin-top: -10px;
+    margin-left: 55px;
+}
+
+.block3 {  
+    grid-area: c;
+    position: relative;
+    margin-top: -20px;
+}
+
+.block4 {    
+    grid-area: d;
+    position: relative;
+    margin-top: -10px;
+    margin-left: -100px;
+    margin-right: 45px;
+}
+
+.block4 p {
+    margin: 0;
+}
