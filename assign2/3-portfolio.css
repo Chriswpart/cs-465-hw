@@ -6,11 +6,10 @@ body {
 }
 
 .top {
-    width: 70%;
-    height: 500px;
-    border: 2px solid black;
+    width: 1200px;
+    height: 600px;
     background: url(https://live.staticflickr.com/8740/17175693750_93f6858b97_b.jpg) no-repeat center;
-    background-size: auto auto;
+    background-size: 1200px 600px;
     margin: 0 auto;
     position: relative;
 }
