@@ -1,15 +1,18 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
-
 body {
     height: 100%;
     min-height: 100vh;
     overflow: hidden;
-    background: linear-gradient(135deg, orange, orange 60%, cyan);
+    background: linear-gradient(135deg, #ffa500, #ffa500 60%, #00ffff);
     font-family: 'Open Sans', sans-serif;
 }
 
-.container {
-    height: 75%;
-    width: 50%;
-    background: white;
+.container{
+    position: relative;
+    background: #FFF;
+    float: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+    height: 700px;
+    width: 450px !important;
 }
