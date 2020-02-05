@@ -1,0 +1,31 @@
+body .col {
+    color: #ffffff;
+}
+
+.col {
+    border: 1px solid #ffffff;
+}
+
+.col-sm-1 {
+    background-color: navy;
+}
+
+.col-sm-3 {
+    background-color: purple;
+}
+
+.col-sm-4 {
+    background-color: darkcyan;
+}
+
+.col-sm-6 {
+    background-color: yellowgreen;
+}
+
+.col-sm-8 {
+    background-color: salmon;
+}
+
+.col-sm-12 {
+    background-color: green;
+}
