@@ -7,6 +7,24 @@
     <title>1-fizzbuzz.html</title>
 </head>
 <body>
-    
+    <script>
+    var i;
+    var j;
+    for (i = 1; i <= 100; i++) {
+        if (i % 3 == 0 && i % 5 == 0) {
+            j = 'fizzbuzz';
+        }
+        else if (i % 3 == 0) {
+            j = 'fizz';
+        }    
+        else if (i % 5 == 0) {
+            j = 'buzz';
+        }
+        else 
+            j = i;
+        
+        console.log(j);
+    }
+    </script>
 </body>
 </html>
