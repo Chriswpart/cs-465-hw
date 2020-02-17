@@ -1,0 +1,32 @@
+
+body {
+    height: 100%;
+    min-height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(135deg, #ffa500, #ffa500 60%, #00ffff);
+}
+
+.container{
+    position: relative;
+    background: #FFF;
+    float: none;
+    margin: 0 auto;
+    margin-top: 50px;
+    padding: 20px 20px 20px 20px;
+
+    width: 425px !important;
+}
+
+.form-group {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.checks {
+    margin-top: 30px;
+}
+
+button {
+    margin-top: 30px !important;
+    margin-bottom: 15px;
+}
