@@ -7,6 +7,22 @@
     <title>4-window-size.html</title>
 </head>
 <body>
-    
+    <h4>Height: </h4>
+    <div id="winHeight">
+    </div>
+    <h4>Width: </h4>
+    <div id="winWidth">
+    </div>
+    <script>
+    window.onresize = windowSize;
+    window.onload = windowSize;
+
+    function windowSize() {
+        var h = window.innerHeight;
+        var w = window.innerWidth;
+        document.getElementById("winHeight").innerHTML = h;
+        document.getElementById("winWidth").innerHTML = w;
+    };
+    </script>
 </body>
 </html>
