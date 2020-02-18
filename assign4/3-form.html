@@ -10,7 +10,7 @@
     <title>1-form</title>
 </head>
 <body>
-    <form action>
+    <form class="myform" action>
         <div class="container">
             <fieldset>
                 <h1 class="text-uppercase font-weight-bold"><span>Contact Form</span></h1>
@@ -28,15 +28,15 @@
                 </div>
                 <div class="checks">
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio1" value="option" checked>
+                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio1" value="undergraduate" checked>
                         <label class="custom-control-label" for="customRadio1">Undergraduate</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio2" value="option">
+                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio2" value="graduate">
                         <label class="custom-control-label" for="customRadio2">Graduate</label>
                     </div>
                     <div class="custom-control custom-radio">
-                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio3" value="option">
+                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio3" value="other">
                         <label class="custom-control-label" for="customRadio3">Other</label>
                     </div>
                 </div>
@@ -44,10 +44,34 @@
                     <label for="Textarea">Any comments?</label>
                     <textarea class="form-control" id="Textarea" rows="4"></textarea>
                 </div>
-                <button type="button" class="btn btn-primary">Submit</button>
-                <button type="button" class="btn btn-secondary">Reset</button>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
             </fieldset>
         </div>
     </form>
+
+    <script>
+    var nameinput = document.getElementById('InputName');
+    var email = document.getElementById('InputEmail');
+    var check;
+    if (document.getElementById('customRadio1').checked) {
+        check = document.getElementById('customRadio1');
+    } else if (document.getElementById('customRadio2').checked) {
+        check = document.getElementById('customRadio2');
+    } else if (document.getElementById('customRadio3').checked) {
+        check = document.getElementById('customRadio3');
+    }
+    var comment = document.getElementById('Textarea');
+    document.querySelector('form.myform').addEventListener('submit', function (e) {
+        e.preventDefault();
+        console.log("name: " + nameinput.value);
+        console.log("email: " + email.value);
+        console.log("class: " + check.value);
+        console.log("comments: " + comment.value);
+    });
+    document.addEventListener('reset', function (d) {
+        console.clear();
+    });
+    </script>
 </body>
 </html>
