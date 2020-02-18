@@ -6,7 +6,20 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>5-background.html</title>
 </head>
-<body>
-    
+<body id="bkg_color" style ="color">
+    <div id="colorBtn">
+        <button onclick="randomColor()">Random Color!</button>
+    </div>
+    <script>
+    function randomColor() {
+        var hex = '#' + (Math.random()*0xFFFFFF<<0).toString(16);
+        changeColor(hex);
+    };
+
+    function changeColor(hex) {
+        document.body.style.background = hex;
+    };
+    </script>
+
 </body>
 </html>
