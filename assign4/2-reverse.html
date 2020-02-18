@@ -7,6 +7,22 @@
     <title>2-reverse.html</title>
 </head>
 <body>
-    
+    <h1>Input a 6 digit number to be reversed!</h1>
+    <button onclick="myReverse()">Start!</button>
+    <p id="num"></p>
+
+    <script>
+    function myReverse() {
+        var number;
+        var input = parseInt(prompt("Enter a 6 digit number:", "0"));
+        if(input.toString().length != 6) {
+            alert("Input 6 digits!");
+        }
+        else {
+            var rev = input.toString().split('').reverse().join('');
+            alert("Input: " + input + "\nOutput: " + rev);
+        }
+    }
+    </script>
 </body>
 </html>
