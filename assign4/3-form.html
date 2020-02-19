@@ -54,16 +54,16 @@
     var nameinput = document.getElementById('InputName');
     var email = document.getElementById('InputEmail');
     var check;
-    if (document.getElementById('customRadio1').checked) {
-        check = document.getElementById('customRadio1');
-    } else if (document.getElementById('customRadio2').checked) {
-        check = document.getElementById('customRadio2');
-    } else if (document.getElementById('customRadio3').checked) {
-        check = document.getElementById('customRadio3');
-    }
     var comment = document.getElementById('Textarea');
     document.querySelector('form.myform').addEventListener('submit', function (e) {
         e.preventDefault();
+        if (document.getElementById('customRadio1').checked) {
+            check = document.getElementById('customRadio1');
+        } else if (document.getElementById('customRadio2').checked) {
+            check = document.getElementById('customRadio2');
+        } else if (document.getElementById('customRadio3').checked) {
+            check = document.getElementById('customRadio3');
+        }
         console.log("name: " + nameinput.value);
         console.log("email: " + email.value);
         console.log("class: " + check.value);
