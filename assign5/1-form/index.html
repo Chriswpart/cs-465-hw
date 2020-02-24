@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/css/bootstrap.min.css"/>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            height: 100%;
+            min-height: 100vh;
+            overflow: hidden;
+            background: linear-gradient(135deg, #ffa500, #ffa500 60%, #00ffff);
+        }
+        
+        .container{
+            position: relative;
+            background: #FFF;
+            float: none;
+            margin: 0 auto;
+            margin-top: 50px;
+            padding: 20px 20px 20px 20px;
+        
+            width: 425px !important;
+        }
+        
+        .form-group {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+        
+        .checks {
+            margin-top: 30px;
+        }
+        
+        button {
+            margin-top: 30px !important;
+            margin-bottom: 15px;
+        }
+    </style>
+    <title>1-form</title>
+</head>
+<body>
+    <form action="/submit" method="post">
+        <div class="container">
+            <fieldset>
+                <h1 class="text-uppercase font-weight-bold"><span>Contact Form</span></h1>
+                <div class="form-group row">
+                    <label for="InputName" class="col-sm-2 col-form-label">Name: </label>
+                    <div class="col-sm-10">
+                        <input type="name" class="form-control" id="InputName" name="name">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="InputEmail" class="col-sm-2 col-form-label">Email: </label>
+                    <div class="col-sm-10">
+                        <input type="email" class="form-control" id="InputEmail" name="email">
+                    </div>
+                </div>
+                <div class="checks">
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio1" value="undergraduate" checked>
+                        <label class="custom-control-label" for="customRadio1">Undergraduate</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio2" value="graduate">
+                        <label class="custom-control-label" for="customRadio2">Graduate</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input type="radio" class="custom-control-input"  name="Radios" id="customRadio3" value="other">
+                        <label class="custom-control-label" for="customRadio3">Other</label>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label for="Textarea">Any comments?</label>
+                    <textarea class="form-control" id="Textarea" rows="4" name="comment"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <button type="reset" class="btn btn-secondary">Reset</button>
+            </fieldset>
+        </div>
+    </form>
+    <script>
+        var nameinput = document.getElementById('InputName');
+        var email = document.getElementById('InputEmail');
+        var check;
+        var comment = document.getElementById('Textarea');
+        document.querySelector('form.myform').addEventListener('submit', function (e) {
+            e.preventDefault();
+            if (document.getElementById('customRadio1').checked) {
+                check = document.getElementById('customRadio1');
+            } else if (document.getElementById('customRadio2').checked) {
+                check = document.getElementById('customRadio2');
+            } else if (document.getElementById('customRadio3').checked) {
+                check = document.getElementById('customRadio3');
+            }
+            console.log("name: " + nameinput.value);
+            console.log("email: " + email.value);
+            console.log("class: " + check.value);
+            console.log("comments: " + comment.value);
+        });
+        document.addEventListener('reset', function (d) {
+            console.clear();
+        });
+        </script>
+</body>
+</html>
