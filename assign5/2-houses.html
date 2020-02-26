@@ -7,16 +7,18 @@
 </head>
 <body>
     <script>
-        async function getHouses(e) {
-            let response = await fetch('https://anapioficeandfire.com/api/houses/' + e + '/');
+        const URL = 'https://anapioficeandfire.com/api/houses/';
+        async function getHouses() {
+            let response = await fetch(URL);
             let data = await response.json()
             return data;
-        }
-        var i;
-        for(i = 1; i <= 10; i++) {
-            getHouses(i)
-                .then(data => console.log(data.name));
-        }
+        };
+        getHouses().then(data => {
+            const names = data.map(item => {
+                return item.name;
+            })
+            console.log(names);
+        })
     </script>
 </body>
 </html>
